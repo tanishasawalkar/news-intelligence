@@ -15,7 +15,7 @@ An end-to-end news dashboard that fetches real-time articles, processes them wit
 
 ---
 
-## Setup (under 5 minutes)
+## Setup 
 
 ### 1. Get your API keys
 
@@ -123,15 +123,6 @@ news-intelligence/
 - **Search & filters** — live search, sentiment filters, and category filters
 - **Stats dashboard** — sentiment breakdown, top category, overall mood score
 - **Pagination** — 12 articles per page
-
----
-
-## What I'd add with more time
-
-- Scheduled pipeline runs via cron job or Supabase Edge Functions
-- Full-text search using Supabase's pg_trgm extension
-- Trending topics chart using Recharts
-- Public deployment on Railway (backend) and Vercel (frontend)
 
 ---
 
