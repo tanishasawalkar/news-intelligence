@@ -124,12 +124,4 @@ news-intelligence/
 - **Stats dashboard** — sentiment breakdown, top category, overall mood score
 - **Pagination** — 12 articles per page
 
----
 
-## Technology decisions
-
-**Why Groq (Llama 3.1)?** Groq offers extremely fast inference and a generous API quota, making it well-suited for batch processing news articles. Originally trialled Google Gemini but encountered quota limitations on the free tier.
-
-**Why Supabase over Firebase?** Supabase uses PostgreSQL, which supports structured queries — filtering by sentiment, category, and pagination — cleanly server-side. Firebase's NoSQL model would push that filtering to the client.
-
-**Why Flask over FastAPI?** For a 5-endpoint API, Flask's simplicity is an advantage. FastAPI's async benefits only matter at higher concurrency.
